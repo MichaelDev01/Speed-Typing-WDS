@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #432371, #714674);
+}
+
+body,
+.quote-input {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  background: linear-gradient(to right, #ffc300, #f6d117);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 700px;
+  max-width: 90%;
+}
+
+.timer {
+  position: absolute;
+  top: 2rem;
+  font-size: 3rem;
+  color: #f0db4f;
+  font-weight: bold;
+}
+
+.score-card {
+  padding-top: 1rem;
+}
+
+.quote-display {
+  margin-bottom: 1rem;
+  margin-left: calc(1rem + 2px);
+  margin-right: calc(1rem + 2px);
+}
+
+.quote-input {
+  background-color: transparent;
+  border: 2px solid #a1922e;
+  outline: none;
+  width: 100%;
+  height: 8rem;
+  margin: auto;
+  resize: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.quote-input:focus {
+  border-color: black;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
